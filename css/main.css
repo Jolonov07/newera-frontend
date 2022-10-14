@@ -173,8 +173,8 @@ nav #search #notif:hover div {
 	font-size: 15px;
 }
 header {
-	position: fixed;
-	/* top: 0; */
+	position: sticky;
+	top: 0;
 	z-index: 9999;
 	background-color: #343434;
 	padding-top: 12px;
@@ -664,7 +664,7 @@ footer #subscribe_footer {
 	text-align: center;
 }
 footer .mail-footer {
-	margin-top: 20px;
+	margin-bottom: 23px;
 	color: rgba(255, 255, 255, 0.5);
 	font-weight: 500;
 	font-size: 0.875rem;
