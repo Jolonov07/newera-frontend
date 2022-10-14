@@ -1039,16 +1039,16 @@
 
 		<script>
 			// Таймер отсчета времени до старта курса
-			var countDownDate = new Date('Nov 06, 2022 18:00:00').getTime()
+			var countDownDate = new Date('Oct 15, 2022 10:00:00').getTime()
 			var x = setInterval(function () {
 				var timeWithUTC = new Date().toLocaleString('en-EN', {
 					timeZone: 'Europe/Kiev',
 				})
 				now = new Date(timeWithUTC)
 				var distance = countDownDate - now
-				var days = Math.floor(distance / (1000 * 60 * 60 * 300))
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24))
 				var hours = Math.floor(
-					(distance % (1000 * 60 * 60 * 94)) / (1000 * 60 * 60)
+					(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
 				)
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000)
